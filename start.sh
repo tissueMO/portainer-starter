@@ -1,6 +1,7 @@
 #!/bin/bash
+# e.g. ./start.sh 8000 9000 /var/lib/portainer/data
 
-PORTAINER_DATA_DIR=/var/local/portainer/data
+PORTAINER_DATA_DIR=$3
 
 if [ ! -d $PORTAINER_DATA_DIR ]; then
   mkdir -p $PORTAINER_DATA_DIR
